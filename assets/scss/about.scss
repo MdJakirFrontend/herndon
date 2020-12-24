@@ -1,0 +1,497 @@
+@import "mixin";
+@import "variable";
+
+.aboutherndon-sec {
+    padding-top: 150px !important;
+    padding-bottom: 0 !important;
+
+    @media (max-width:992px) {
+        padding-top: 50px !important;
+    }
+}
+
+.innerhero-sec {
+    background-image: url(../img/aboutbanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width:992px) {
+        min-height: auto;
+        padding: 50px 0;
+    }
+
+    .hdsectitle {
+        margin-bottom: 30px;
+
+        .title {
+            color: #ffffff;
+        }
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .herobradcamp {
+        ul {
+            li {
+                display: inline-block;
+                margin-right: 35px;
+
+                a {
+                    font-family: "Sofia Pro";
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: #887f7c;
+                    text-decoration: line-through;
+                    display: inline-block;
+                }
+
+                img {
+                    margin-right: 10px;
+                }
+
+                .active {
+                    color: #fff;
+
+                    text-decoration: none;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.aboutherndon-sec {
+    .herdon-board-box {
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .line-style::after {
+        display: none;
+    }
+}
+
+.hdhistory-section {
+    background: #f9f4eb;
+    padding: 100px 0;
+    @media (max-width:992px) {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}
+
+.history-navwrp {
+    min-height: 78px;
+    background-color: #fff;
+    position: sticky;
+    top: 87px;
+    background: #fff;
+    padding: 0;
+    z-index: 9999;
+
+    @media (max-width:768px) {
+        top: 125px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 78px;
+        width: 100%;
+
+        @media (max-width:992px) {
+            padding-left: 10px;
+        }
+
+        li {
+            display: inline-block;
+            font-family: "Sofia Pro";
+            font-weight: normal;
+            font-size: 23px;
+            line-height: 75px;
+            text-align: left;
+            color: #887f7c;
+            text-align: center;
+            flex-shrink: 1;
+            flex-shrink: 1;
+            flex-grow: 0;
+            width: 16.7%;
+            position: relative;
+
+            @media (max-width:768px) {
+                width: 15.7%;
+            }
+
+            &:after {
+                position: absolute;
+                content: "";
+                width: 73px;
+                height: 3px;
+                background: #c26046;
+                bottom: -1px;
+                left: 55px;
+                opacity: 0;
+                @include transition();
+
+                @media (max-width:992px) {
+                    display: none;
+                }
+            }
+
+            &::before {
+                position: absolute;
+                right: -46px;
+                content: "";
+                width: 92px;
+                height: 2px;
+                background: #e7e5e4;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+
+                @media (max-width:992px) {
+                    display: none;
+                }
+            }
+
+            &:last-of-type {
+                &:after {
+                    left: 60px;
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            .circle-shape {
+                width: 16px;
+                height: 16px;
+                background: transparent;
+                border: 2px solid #887f7c;
+                display: inline-block;
+                border-radius: 50%;
+                margin-right: 10px;
+                @include transition();
+
+                @media (max-width:992px) {
+                    display: none;
+                }
+            }
+
+            &:hover {
+                color: #c26046;
+
+                .circle-shape {
+                    border-color: #c26046;
+                }
+            }
+        }
+
+        .active {
+            color: #c26046;
+
+            &:after {
+                opacity: 1;
+            }
+
+            .circle-shape {
+                border: 2px solid #c26046;
+            }
+        }
+    }
+}
+
+.historywrap {
+    margin: 100px 0;
+}
+
+/* inlice card*/
+
+.hdinline-card {
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width:992px){
+        display: block;
+    }
+
+    &-img {
+        width: 40%;
+        flex-grow: 0;
+        flex-shrink: 1;
+        position: relative;
+        @media (max-width:992px){
+            width:100%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &-info {
+        width: 60%;
+        flex-grow: 0;
+        flex-shrink: 1;
+        padding-left: 25px;
+        @media (max-width:992px){
+            width:100%;
+        }
+
+        h3,
+        a {
+            font-family: "Sofia Pro";
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 40px;
+            text-align: left;
+            color: #291914;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-family: "Sofia Pro";
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            color: #584c48;
+            margin-bottom: 15px;
+        }
+
+        .mtreadmore {
+            font-family: "Sofia Pro";
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 30px;
+            color: #c26046;
+            display: inline-block;
+            @include transition();
+
+            &:hover {
+                color: #291914;
+            }
+        }
+    }
+}
+
+/* inline card */
+
+/* block card */
+.hdblock-card {
+    margin-bottom: 30px;
+
+    &-info {
+        text-align: center;
+
+        h3,
+        a {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #fff;
+            display: block;
+            margin-bottom: 10px;
+            @include transition();
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 26px;
+            margin-bottom: 10px;
+            color: #f6eddc;
+        }
+
+        .mtreadmore {
+            font-family: "Sofia Pro";
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 30px;
+            color: #c26046;
+            @include transition();
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    &-img {
+        position: relative;
+        margin-bottom: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+/* end block card */
+
+/* meet section */
+.jkmeetsection {
+    padding: 115px 0 80px;
+}
+
+/* meet section end */
+/* brod meet section */
+.hdmeatbord-sec {
+    background: #291914;
+
+    .hdsectitle {
+        .title {
+            color: #fff;
+        }
+    }
+
+    .hdblock-card {
+        margin-bottom: 30px;
+
+        &-title,
+        &-title a {
+            padding: 5px 0;
+            display: block;
+            margin-bottom: 0;
+        }
+
+        &-info {
+            margin: 0 15px;
+            @include transition();
+
+            p {
+                margin-top: 10px;
+            }
+
+            .mtreadmore {
+                opacity: 0;
+                visibility: hidden;
+                // display: none;
+            }
+        }
+
+        &:hover {
+            .hdblock-card-info {
+                transform: translateY(-40px);
+
+                .mtreadmore {
+                    opacity: 1;
+                    visibility: visible;
+                    // display: block;
+                }
+            }
+
+            .hdblock-card-title {
+                background: #c26046;
+            }
+        }
+    }
+}
+
+/* brod meet end */
+.about-gamechange {
+    background-color: #f9f4eb;
+    padding: 100px 0;
+
+    .slider-item {
+        background-color: #fff;
+    }
+}
+
+/* abawaits-sec */
+.abawaits-sec {
+    padding: 160px 0 100px !important;
+    @media (max-width:992px) {
+        padding:50px  !important;
+    }
+
+    .jkhddetailsimg-wrp {
+        width: 100%;
+
+        &:after {
+            width: 351px;
+            height: 185px;
+        }
+    }
+
+    .history-infodetails {
+        .history-title {
+            margin-bottom: 50px;
+        }
+
+        .jkhdbtn {
+            display: inline-block;
+            margin-top: 20px;
+        }
+    }
+}
+
+/* abawaits-sec end */
+.hdmeetfamily-sec {
+    .history-infodetails {
+        .historydate {
+            font-family: "Sofia Pro";
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 64px;
+            color: #c26046;
+            position: relative;
+            margin-bottom: 30px;
+
+            &::after {
+                position: absolute;
+                bottom: 0;
+                content: "";
+                width: 100px;
+                height: 2px;
+                background: #c26046;
+                left: 0;
+            }
+        }
+
+        .subinfodetails {
+            font-family: "Sofia Pro";
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 33px;
+            color: #584c48;
+            margin-bottom: 30px;
+        }
+    }
+
+    .hsborder-devider {
+        padding: 50px 0;
+        margin: -50px 0;
+        border-top: 1px solid #e7e5e4;
+        border-bottom: 1px solid #e7e5e4;
+    }
+
+    .hsbordertop-devider {
+        border-top: 1px solid #e7e5e4;
+        padding: 50px 0 0;
+        margin: -50px 0 0;
+    }
+}

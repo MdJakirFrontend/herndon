@@ -1,0 +1,357 @@
+.aboutherndon-sec {
+  padding-top: 150px !important;
+  padding-bottom: 0 !important; }
+  @media (max-width: 992px) {
+    .aboutherndon-sec {
+      padding-top: 50px !important; } }
+
+.innerhero-sec {
+  background-image: url(../img/aboutbanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 992px) {
+    .innerhero-sec {
+      min-height: auto;
+      padding: 50px 0; } }
+  .innerhero-sec .hdsectitle {
+    margin-bottom: 30px; }
+    .innerhero-sec .hdsectitle .title {
+      color: #ffffff; }
+  .innerhero-sec .hero-content {
+    text-align: center; }
+  .innerhero-sec .herobradcamp ul li {
+    display: inline-block;
+    margin-right: 35px; }
+    .innerhero-sec .herobradcamp ul li a {
+      font-family: "Sofia Pro";
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 30px;
+      color: #887f7c;
+      text-decoration: line-through;
+      display: inline-block; }
+    .innerhero-sec .herobradcamp ul li img {
+      margin-right: 10px; }
+    .innerhero-sec .herobradcamp ul li .active {
+      color: #fff;
+      text-decoration: none; }
+    .innerhero-sec .herobradcamp ul li:last-child {
+      margin-right: 0; }
+
+.aboutherndon-sec .herdon-board-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .aboutherndon-sec .herdon-board-box a img {
+    margin-right: 5px; }
+.aboutherndon-sec .line-style::after {
+  display: none; }
+
+.hdhistory-section {
+  background: #f9f4eb;
+  padding: 100px 0; }
+  @media (max-width: 992px) {
+    .hdhistory-section {
+      padding-top: 50px;
+      padding-bottom: 20px; } }
+
+.history-navwrp {
+  min-height: 78px;
+  background-color: #fff;
+  position: sticky;
+  top: 87px;
+  background: #fff;
+  padding: 0;
+  z-index: 9999; }
+  @media (max-width: 768px) {
+    .history-navwrp {
+      top: 125px; } }
+  .history-navwrp ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 78px;
+    width: 100%; }
+    @media (max-width: 992px) {
+      .history-navwrp ul {
+        padding-left: 10px; } }
+    .history-navwrp ul li {
+      display: inline-block;
+      font-family: "Sofia Pro";
+      font-weight: normal;
+      font-size: 23px;
+      line-height: 75px;
+      text-align: left;
+      color: #887f7c;
+      text-align: center;
+      flex-shrink: 1;
+      flex-shrink: 1;
+      flex-grow: 0;
+      width: 16.7%;
+      position: relative; }
+      @media (max-width: 768px) {
+        .history-navwrp ul li {
+          width: 15.7%; } }
+      .history-navwrp ul li:after {
+        position: absolute;
+        content: "";
+        width: 73px;
+        height: 3px;
+        background: #c26046;
+        bottom: -1px;
+        left: 55px;
+        opacity: 0;
+        transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease; }
+        @media (max-width: 992px) {
+          .history-navwrp ul li:after {
+            display: none; } }
+      .history-navwrp ul li::before {
+        position: absolute;
+        right: -46px;
+        content: "";
+        width: 92px;
+        height: 2px;
+        background: #e7e5e4;
+        top: 0;
+        bottom: 0;
+        margin: auto; }
+        @media (max-width: 992px) {
+          .history-navwrp ul li::before {
+            display: none; } }
+      .history-navwrp ul li:last-of-type:after {
+        left: 60px; }
+      .history-navwrp ul li:last-of-type::before {
+        display: none; }
+      .history-navwrp ul li .circle-shape {
+        width: 16px;
+        height: 16px;
+        background: transparent;
+        border: 2px solid #887f7c;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 10px;
+        transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease; }
+        @media (max-width: 992px) {
+          .history-navwrp ul li .circle-shape {
+            display: none; } }
+      .history-navwrp ul li:hover {
+        color: #c26046; }
+        .history-navwrp ul li:hover .circle-shape {
+          border-color: #c26046; }
+    .history-navwrp ul .active {
+      color: #c26046; }
+      .history-navwrp ul .active:after {
+        opacity: 1; }
+      .history-navwrp ul .active .circle-shape {
+        border: 2px solid #c26046; }
+
+.historywrap {
+  margin: 100px 0; }
+
+/* inlice card*/
+.hdinline-card {
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media (max-width: 992px) {
+    .hdinline-card {
+      display: block; } }
+  .hdinline-card-img {
+    width: 40%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    position: relative; }
+    @media (max-width: 992px) {
+      .hdinline-card-img {
+        width: 100%; } }
+    .hdinline-card-img img {
+      width: 100%; }
+  .hdinline-card-info {
+    width: 60%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding-left: 25px; }
+    @media (max-width: 992px) {
+      .hdinline-card-info {
+        width: 100%; } }
+    .hdinline-card-info h3,
+    .hdinline-card-info a {
+      font-family: "Sofia Pro";
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 40px;
+      text-align: left;
+      color: #291914;
+      margin-bottom: 15px; }
+    .hdinline-card-info p {
+      font-family: "Sofia Pro";
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 26px;
+      color: #584c48;
+      margin-bottom: 15px; }
+    .hdinline-card-info .mtreadmore {
+      font-family: "Sofia Pro";
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 30px;
+      color: #c26046;
+      display: inline-block;
+      transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease; }
+      .hdinline-card-info .mtreadmore:hover {
+        color: #291914; }
+
+/* inline card */
+/* block card */
+.hdblock-card {
+  margin-bottom: 30px; }
+  .hdblock-card-info {
+    text-align: center; }
+    .hdblock-card-info h3,
+    .hdblock-card-info a {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: #fff;
+      display: block;
+      margin-bottom: 10px;
+      transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease; }
+    .hdblock-card-info p {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 26px;
+      margin-bottom: 10px;
+      color: #f6eddc; }
+    .hdblock-card-info .mtreadmore {
+      font-family: "Sofia Pro";
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 30px;
+      color: #c26046;
+      transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease; }
+      .hdblock-card-info .mtreadmore:hover {
+        color: #fff; }
+  .hdblock-card-img {
+    position: relative;
+    margin-bottom: 20px; }
+    .hdblock-card-img img {
+      width: 100%; }
+
+/* end block card */
+/* meet section */
+.jkmeetsection {
+  padding: 115px 0 80px; }
+
+/* meet section end */
+/* brod meet section */
+.hdmeatbord-sec {
+  background: #291914; }
+  .hdmeatbord-sec .hdsectitle .title {
+    color: #fff; }
+  .hdmeatbord-sec .hdblock-card {
+    margin-bottom: 30px; }
+    .hdmeatbord-sec .hdblock-card-title, .hdmeatbord-sec .hdblock-card-title a {
+      padding: 5px 0;
+      display: block;
+      margin-bottom: 0; }
+    .hdmeatbord-sec .hdblock-card-info {
+      margin: 0 15px;
+      transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease; }
+      .hdmeatbord-sec .hdblock-card-info p {
+        margin-top: 10px; }
+      .hdmeatbord-sec .hdblock-card-info .mtreadmore {
+        opacity: 0;
+        visibility: hidden; }
+    .hdmeatbord-sec .hdblock-card:hover .hdblock-card-info {
+      transform: translateY(-40px); }
+      .hdmeatbord-sec .hdblock-card:hover .hdblock-card-info .mtreadmore {
+        opacity: 1;
+        visibility: visible; }
+    .hdmeatbord-sec .hdblock-card:hover .hdblock-card-title {
+      background: #c26046; }
+
+/* brod meet end */
+.about-gamechange {
+  background-color: #f9f4eb;
+  padding: 100px 0; }
+  .about-gamechange .slider-item {
+    background-color: #fff; }
+
+/* abawaits-sec */
+.abawaits-sec {
+  padding: 160px 0 100px !important; }
+  @media (max-width: 992px) {
+    .abawaits-sec {
+      padding: 50px  !important; } }
+  .abawaits-sec .jkhddetailsimg-wrp {
+    width: 100%; }
+    .abawaits-sec .jkhddetailsimg-wrp:after {
+      width: 351px;
+      height: 185px; }
+  .abawaits-sec .history-infodetails .history-title {
+    margin-bottom: 50px; }
+  .abawaits-sec .history-infodetails .jkhdbtn {
+    display: inline-block;
+    margin-top: 20px; }
+
+/* abawaits-sec end */
+.hdmeetfamily-sec .history-infodetails .historydate {
+  font-family: "Sofia Pro";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 64px;
+  color: #c26046;
+  position: relative;
+  margin-bottom: 30px; }
+  .hdmeetfamily-sec .history-infodetails .historydate::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: #c26046;
+    left: 0; }
+.hdmeetfamily-sec .history-infodetails .subinfodetails {
+  font-family: "Sofia Pro";
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 33px;
+  color: #584c48;
+  margin-bottom: 30px; }
+.hdmeetfamily-sec .hsborder-devider {
+  padding: 50px 0;
+  margin: -50px 0;
+  border-top: 1px solid #e7e5e4;
+  border-bottom: 1px solid #e7e5e4; }
+.hdmeetfamily-sec .hsbordertop-devider {
+  border-top: 1px solid #e7e5e4;
+  padding: 50px 0 0;
+  margin: -50px 0 0; }
+
+/*# sourceMappingURL=about.css.map */

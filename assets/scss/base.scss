@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import "variable";
+@import "mixin";
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Sofia Pro";
+}
+
+html {
+    overflow-x: hidden !important;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-rendering: optimizeLegibility;
+}
+
+ul,
+ul li,
+ul li a {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+/*common section padding */
+.hdsection-padding {
+    padding: 100px 0;
+}
+
+/* common button */
+.jkhdbtn {
+    min-height: 48px;
+    line-height: 48px;
+    background: #c26046;
+    font-family: "Sofia Pro";
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 35px;
+    border: 1px solid #c26046;
+    display: inline-block;
+    @include transition();
+
+    &:focus {
+        outline: none;
+        border: 1px solid transparent;
+    }
+
+    &:hover {
+        background: transparent;
+        color: #c26046;
+    }
+}
+
+/* input field */
+.input {
+    font-family: "Sofia Pro";
+    font-weight: normal;
+    font-size: 16px;
+    color: #887f7c;
+    min-height: 58px;
+    line-height: 58px;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+}
+
+/* common section title */
+.hdsectitle {
+    text-align: center;
+    margin-bottom: 70px;
+
+    .subtitle {
+        font-family: "Sofia Pro";
+        font-weight: normal;
+        font-size: 14px;
+        color: #c26046;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-family: "Playfair Display";
+        font-weight: bold;
+        font-size: 36px;
+        color: #291914;
+        position: relative;
+        display: inline-block;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background: #c26046;
+            right: 0;
+            margin: auto;
+        }
+    }
+}
+
+/* common blog */
+.blog-card {
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 25px;
+
+    .card-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .card-info {
+        padding: 20px 30px 15px;
+
+        .info-date {
+            font-family: "Sofia Pro";
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 30px;
+            display: inline-flex;
+            margin-bottom: 20px;
+            color: #c26046;
+            align-items: center;
+
+            img {
+                margin-right: 10px;
+            }
+        }
+
+        h3,
+        a {
+            font-family: "Sofia Pro";
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 30px;
+            color: #291914;
+            margin-bottom: 20px;
+            @include transition();
+
+            &:hover {
+                color: #c26046;
+            }
+        }
+
+        p {
+            font-family: "Sofia Pro";
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            color: #584c48;
+            margin-bottom: 0;
+        }
+    }
+
+    .card-btn {
+        padding: 0 30px 20px;
+
+        .detailsbtn {
+            font-family: "Sofia Pro";
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 30px;
+            color: #c26046;
+            display: inline-block;
+        }
+    }
+}
+
+/* end common blog */
